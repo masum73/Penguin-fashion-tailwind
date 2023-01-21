@@ -7,6 +7,19 @@
     <title>Penguin Fashion - Tailwind</title>
     <!-- tailwind css CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- customize config tailwind -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                price: '#FABE4C',
+              }
+            }
+          }
+        }
+      </script>
     <!-- font awesome CDN -->
     <script src="https://kit.fontawesome.com/0b6d34a4f7.js" crossorigin="anonymous"></script>
 </head>
@@ -14,7 +27,7 @@
     <header  class="bg-amber-100">
         <!-- nav -->
         <!-- banner -->
-        <div class="container mx-auto py-12 md:flex justify-center items-center mt-12">
+        <div class="container mx-auto py-12 md:flex justify-between items-center mt-12">
             <div class="space-y-5 px-4">
                 <h1 class="text-7xl font-semibold uppercase"> <span class="text-amber-400">Be the Penguin</span><br> of winter</h1>
                 <p class="text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, quibusdam!</p>
@@ -26,9 +39,58 @@
         </div>
     </header>
 
-    <main>
-        <section>
-            <h1>Women Jacket</h1>
+    <main class="container mx-auto">
+        <!-- women jacket section -->
+        <section class="mt-12">
+            <h1 class="text-5xl font-semibold uppercase">Women Jacket</h1>
+
+            <!-- women jacket card div -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- women jacket card 1-->
+                <div class="rounded-2xl p-4 drop-shadow-xl">
+                    <div class="bg-slate-100 p-4 rounded-2xl">
+                        <img src="images/jacket-1.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl">Yellow Coat Jacket</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="flex justify-between">
+                            <h2 class="text-4xl font-semibold text-price">$234</h2>
+                            <button class="text-lg rounded-lg bg-gradient-to-r from-[#A4BC46] to-[#85A019] px-8 py-4 text-white"><i class="fa-solid fa-cart-shopping"></i> Buy now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- women jacket card 2-->
+                <div class="rounded-2xl p-4 drop-shadow-xl">
+                    <div class="bg-slate-100 p-4 rounded-2xl">
+                        <img src="images/jacket-2.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl">Ladies Jacket</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="flex justify-between">
+                            <h2 class="text-4xl font-semibold text-price">$234</h2>
+                            <button class="text-lg rounded-lg bg-gradient-to-r from-[#A4BC46] to-[#85A019] px-8 py-4 text-white"><i class="fa-solid fa-cart-shopping"></i> Buy now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- women jacket card 3-->
+                <div class="rounded-2xl p-4 drop-shadow-xl">
+                    <div class="bg-slate-100 p-4 rounded-2xl">
+                        <img src="images/jacket-3.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl">Woman Leather Jacket</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="flex justify-between">
+                            <h2 class="text-4xl font-semibold text-price">$234</h2>
+                            <button class="text-lg rounded-lg bg-gradient-to-r from-[#A4BC46] to-[#85A019] px-8 py-4 text-white"><i class="fa-solid fa-cart-shopping"></i> Buy now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
